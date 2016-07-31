@@ -1,0 +1,31 @@
+<style>
+<!--
+ img {vertical-align: top}
+ code {background-color: #e3e3e3;display: inline-block;overflow: hidden;padding: 4px}
+//-->
+</style>
+<body>
+demo page for dinf.php<br>
+
+ Shows images when it exist, but finds replacements based on the file-name by removing the last character of the base-file name
+ abcdefghijklmnop.png ,
+ abcdefghi
+  abcdefghi.png,
+   abcdefg.png, abcde.png,abcd.png arent available.<br>
+
+<br><br>
+ abcdefghijklmnop.png <img src="1/abcdefghijklmnop.png" width= "100">
+ abcdefghi.png <img src="1/abcdefghi.png" width= "100">
+  abcdefgh.png <img src="1/abcdefgh.png" width= "100">
+   abcdefg.png <img src="1/abcdefg.png" width= "100">
+ <strong>abcdef.png </strong><img src="1/abcdef.png" width= "100">
+ abcde.png <img src="1/abcde.png" width= "100">
+ abcd,png <img src="1/abcd.png" width= "100">
+ <strong>abc.png</strong> <img src="1/abc.png" width= "100">
+ <strong>ab.png </strong><img src="1/ab.png" width= "100">
+<br>
+Following images doenst have a surrogate<br>
+ (click to see its error message)<br>
+<a href="dirk.png"><strong>dirk.png </strong><img src="dirk.png" width= "100"></a><br>
+ <br><br>
+ </body>
